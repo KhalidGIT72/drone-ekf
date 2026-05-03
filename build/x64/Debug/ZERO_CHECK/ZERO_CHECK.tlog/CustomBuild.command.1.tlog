@@ -1,0 +1,10 @@
+^C:\USERS\JEBARIK\DESKTOP\PROJECTS\DRONE_EKF\BUILD\CMAKEFILES\7373E8A7F85B8F4E536C110D50D9FAD0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/jebarik/Desktop/Projects/drone_ekf -BC:/Users/jebarik/Desktop/Projects/drone_ekf/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/jebarik/Desktop/Projects/drone_ekf/build/drone_ekf.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
